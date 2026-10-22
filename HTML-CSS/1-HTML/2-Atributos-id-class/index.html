@@ -1,0 +1,54 @@
+<!-- Define o tipo de documento como HTML5 -->
+<!doctype html>
+
+<!-- Tag principal da página, definida em Português do Brasil -->
+<html lang="pt-BR">
+  <head>
+    <!-- Define a codificação de caracteres como UTF-8 (suporta acentos e emojis) -->
+    <meta charset="UTF-8" />
+    
+    <!-- Torna a página responsiva para telas de celulares e tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Título que aparece na aba do navegador -->
+    <title>Meu HTML - ID e CLASS</title>
+
+    <!-- Seção de estilos CSS internos -->
+    <style>
+      /* Seletor de CLASSE (.fundo-vermelho): aplica fundo vermelho a qualquer elemento com class="fundo-vermelho" */
+      .fundo-vermelho {
+        background: red;
+      }
+
+      /* Seletor de TAG (p): aplica fundo azul a TODOS os parágrafos <p> da página */
+      p {
+        background: blue;
+      }
+
+      /* Seletor de CLASSE (.bold): altera a cor do texto para rosa */
+      .bold {
+        color: pink;
+      }
+    </style>
+
+  </head>
+  <body>
+    <!-- 
+      Elemento <h1> com ID único ("cabecalho-um") e duas CLASSES ("fundo-vermelho" e "borda-esquerda").
+      Nota: "borda-esquerda" está listada na class, mas ainda não foi criada no <style>.
+    -->
+    <h1 id="cabecalho-um" class="fundo-vermelho borda-esquerda">Título 1</h1>
+
+    <!-- Elemento <h1> com ID único ("cabecalho-dois") e a classe "fundo-vermelho" -->
+    <h1 id="cabecalho-dois" class="fundo-vermelho">Título 1</h1>
+
+    <!-- 
+      Parágrafos que recebem tanto a regra da tag <p> (fundo azul) 
+      quanto a regra da classe .bold (texto rosa)
+    -->
+    <p class="bold">Um texto qualquer.</p>
+    <p class="bold">Um texto qualquer.</p>
+    <p class="bold">Um texto qualquer.</p>
+
+  </body>
+</html>
